@@ -1,5 +1,5 @@
 language: cpp
-#testing buil
+#testing bu
 compiler:
   - gcc
 cache: apt
