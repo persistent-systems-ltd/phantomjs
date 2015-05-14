@@ -1,5 +1,4 @@
 language: cpp
-#testing bu
 compiler:
   - gcc
 cache: apt
@@ -12,7 +11,6 @@ install:
   - sudo apt-get -yq install build-essential chrpath libssl-dev libfontconfig1-dev sqlite3 libsqlite3-dev ruby gperf bison flex libicu48 libicu-dev #< Build Dependencies
 
 before_script:
-  - gcc --version
   - chmod +x ./build.sh
   - chmod +x ./test/run-tests.sh
   - chmod +x ./test/run-tests-ghostdriver.sh
