@@ -12,14 +12,15 @@ install:
   - sudo apt-get -yq install build-essential chrpath libssl-dev libfontconfig1-dev sqlite3 libsqlite3-dev ruby gperf bison flex libicu48 libicu-dev #< Build Dependencies
 
 before_script:
+  - gcc --version
   - chmod +x ./build.sh
   - chmod +x ./test/run-tests.sh
   - chmod +x ./test/run-tests-ghostdriver.sh
   
 script:
   - bash -x build.sh --confirm --silent   #< Build
-  - ./test/run-tests.sh             #< Test (PhantomJS)
-  - ./test/run-tests-ghostdriver.sh #< Test (GhostDriver / PhantomJSDriver)
+  #- ./test/run-tests.sh             #< Test (PhantomJS)
+  #- ./test/run-tests-ghostdriver.sh #< Test (GhostDriver / PhantomJSDriver)
 
 notifications:
   irc:
