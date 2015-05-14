@@ -18,7 +18,7 @@ before_script:
   - chmod +x ./test/run-tests-ghostdriver.sh
   
 script:
-  - bash -x build.sh --confirm --silent   #< Build
+  - ./build.sh --confirm --silent   #< Build
   #- ./test/run-tests.sh             #< Test (PhantomJS)
   #- ./test/run-tests-ghostdriver.sh #< Test (GhostDriver / PhantomJSDriver)
 
